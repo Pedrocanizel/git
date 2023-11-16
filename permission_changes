@@ -1,0 +1,12 @@
+When I went to request the commit, git asked me to configure name and email in the environment, so I did it as usual.
+
+When I researched the issue, I discovered that there is a default configuration in Windows that automatically makes changes to file permissions, and there is a git command that prevents git from tracking these permission changes, which is the following command :
+
+git config --global core.FileMode false
+
+"When core.fileMode is set to true, Git tracks changes in executable bits of files, 
+which is the default behavior. By setting core.fileMode to false, you instruct Git to 
+ignore changes in the file permissions. This means that changes like making a file 
+executable or changing its read/write permissions won't be considered as changes by Git. 
+This can prevent a lot of "noise" in Git commits and status, especially in environments 
+where these permission changes are frequent and irrelevant to the project needs "
