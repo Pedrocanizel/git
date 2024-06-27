@@ -1,0 +1,7 @@
+para salvar na pilha as mudanças e não perder
+
+na branch que vc está trabalhando, por exemplo branch x, vc dá: git stash -u
+
+depois vc muda de branch, pra branch y e trabalha.
+
+quando vc voltar pra branch x vc só roda o git stash apply
